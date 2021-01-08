@@ -239,6 +239,7 @@ Click on Create Application.
 - Click on crudappebs-env to see it running
 
 **Step 3.AWS Console>Developers Tools>Pipeline>Pipelines>Create Pipeline**
+
 In Pipeline Settings give following details:
 - Pipeline name - cp-ebs
 - Service role - Select Existing service role
