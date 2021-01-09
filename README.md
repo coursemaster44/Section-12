@@ -471,6 +471,23 @@ Check for the data deleted
 
 # End of Lab
 
+# Section 12-cleanup-lab
+
+**Step 1.Goto Ec2 Dashboard>AutoScalingGroup>Auto Scaling groups**
+- Select CodeDeploy_crud ASG to Delete>Confirm delete
+
+**Step 2.Goto Elastic BeanStalk>Applications>crud-app-ebs**
+- Click on Actions>Delete Application>Confirm deletion
+
+**Step 3.Goto Ec2Dashboard>Load Balancing>Load Balancers**
+- Select alb-cd>Actions>Delete the load balancer>Confirm Yes,delete
+
+**Step 4.Goto Ec2Dashboard>Load Balancing>Target Groups**
+- Select Target Group tg-cd>Actions>Delete>Delete target group>Confirm>Yes,delete
+
+**Step 5.Goto Ec2 Dashboard and Terminate crud-server single Instance**
+
+# End of Lab
 
 
 
