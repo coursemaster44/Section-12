@@ -197,8 +197,10 @@ $ git push
 **Step 14. Open the Postman Tool**
 
 **Step 15.Goto Environment>Manage Environments**
-Select ALB environment and change the url current Value DNS name of ALB:
-http://alb-crud-asg-xxxxx.ap-south-1-1.elb.amazonaws.com
+- Select ALB environment 
+- Change the url current Value DNS name of ALB as follows:
+- http://alb-crud-asg-xxxxx.ap-south-1-1.elb.amazonaws.com
+
 Click on Update and exit
 
 **Step 16.Now select ALB as Environment**
