@@ -245,6 +245,9 @@ Check for the data deleted
 **Step 27.Now Goto AWS Console>DynamoDB>Tables**
 - Refresh and see that Table is deleted
 
+**Step 28.Goto Artifacts store to validate**
+- Amazon S3>codepipelie-ap-south-1-852554154xx>cp-crud-asg-alb>SourceArti/
+- Amazon S3>codepipelie-ap-south-1-852554154xx>cp-crud-asg-alb>Buildartif/
 
 # End of Lab
 
