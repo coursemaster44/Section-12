@@ -366,7 +366,7 @@ Check for the data deleted
       - 5.2.3(Recommended)
    - Application Code - Select Sample application
 
-Click on Create Application.
+Click on Create Application
 
 **Step 2. Creating environment started**
 - Elastic BeanStalk launches an environment named crudappebs-env
@@ -419,12 +419,11 @@ Click on Next
 - Refresh the crudappebs-env link 
 - See that it is running
 
-
 **Step 10.Open Postman Tool>Environment>Manage Environments**
 
-**Step 11.Now select ebs as Environment and change its url value to "crudappebs-env link"**
+**Step 11.Now select ebs as Environment and change its url value to "crudappebs-env link" and click on Update**
 
-**Step 12.select {{url}}/create table and Click on Send**
+**Step 12.Select {{url}}/create table and Click on Send**
 - Table created successfully
 
 **Step 13.Check the Table created in DynamoDB**
@@ -475,7 +474,7 @@ $ git commit -m "changed index color for cp-ebs "
 $ git push
 ```
 
-**Step 24.Go back to our pipeline and see that it is started for change**
+**Step 24.Go back to Pipeline and see that it is started for change**
 - See the latest commit - "changed index color for cp-ebs "
 - Monitor all stages Build>Source>Deploy
 
@@ -487,7 +486,7 @@ $ git push
 
 # 5-crud-ebs-single-ec2-multiple-ec2-lab
 
-**Step 1.Goto Pipeline>pipeline-cp-ebs>edit**
+**Step 1.Goto Developers tools>CodePipeline>Pipelines>cp-ebs>edit**
 - Click on Add Stage 
   - Stage name - Production
   - Click on add stage
@@ -509,25 +508,25 @@ Click on Done
 
 - Click on Done
 
-Click on save to save pipeline changes
+Click on save to Save pipeline changes
 
-**Step 4.Open Visual Studio Code and goto pages>index.ejs**
-- Edit the file for new color
+**Step 4.Open Visual Studio Code and goto pages**
+- Edit about.ejs and index.ejs file for new color
 - save it
-- Run the following command
+- Run the following commands
 ```sh
 $ git status
 $ git add .
 $ git commit -m "changed index and about color for cp-production-deployment "
 $ git push
 ```
-**Step 5.Go back to our pipeline and see that it is started for change**
+**Step 5.Go back to Pipeline and see that it is re-started for changes**
 - See the latest commit - "changed index and about color for cp-production-deployment "
 - Monitor all stages Build>Source>Deploy
 
 **Step 6.Deployment has been completed** 
 - Refresh the crudappebs-env link
-- See that color is changed
+- See that color is changed for both the pages
 
 **Step 7.Goto your Email-Inbox to approve the Pre-prod stage**
 - Search for email with Subject:APPROVAL NEEDED: AWS CodePipeline-cp-ebs for action Approval-1
@@ -540,7 +539,7 @@ Click on link to Approve
 Click on Approve
 
 **Step 9.Pre-prod "single-ec2-deployment" started after approval**
-- Production stage id pending for approval
+- Production stage is pending for approval
 
 **Step 10.Goto your Email-Inbox again to approve the Production stage**
 - Search for email with Subject:APPROVAL NEEDED: AWS CodePipeline-cp-ebs for action Approval-2
@@ -554,7 +553,7 @@ Click on Approve
 
 **Step 12.Production "fleet-of-ec2-instances-deployment" started after approval**
 
-**Step 13 Deployment is in progress now**
+**Step 13 Monitor the progress of the Deployment**
 
 **Step 14.After the deployment is completed run APIs**
 
